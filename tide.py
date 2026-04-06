@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 obs = np.loadtxt('obs_data.txt')
 cal = np.loadtxt('cal_data.txt')
 
-ad, ls, ios = cal[:, 1], cal[:, 2], cal[:, 3] 
+ad, ls, ios = cal[:, 0], cal[:, 1], cal[:, 2] 
 
 ''''
 ad = admiralty method       [calculated in excel]
