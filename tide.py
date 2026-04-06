@@ -7,14 +7,16 @@ cal = np.loadtxt('cal_data.txt')
 ad, ls, ios = cal[:, 1], cal[:, 2], cal[:, 3] 
 
 ''''
-ad = admiralty method
-ls = least squares method
-ios = IOS method
+ad = admiralty method       [calculated in excel]
+ls = least squares method   [calculated in ls app from US Army Engineer 
+                                Waterways Experiment Station Coastal 
+                                Engineering Research Center]
+ios = IOS method            [calculated in Mike zero]
+
 '''
 
-''''
-sea surface elevation calculation
-'''
+# Sea surface elevation calculation
+
 def MSL(Z0):
     MSL = Z0
     
@@ -33,9 +35,7 @@ def q(Z0, M2, K1, O1):
     return MHWL, MLWL
 
 
-''''
-residu & elevation data
-'''
+# Residu & elevation data
 
 df = np.loadtxt('tide_constanta.txt')
 
@@ -49,14 +49,13 @@ MHWL_ad, MLWL_ad = q(df[0, 0], df[0, 1], df[0, 4], df[0, 6])
 MHWL_ls, MLWL_ls = q(df[1, 0], df[1, 1], df[1, 4], df[1, 6])
 MHWL_ios, MLWL_ios = q(df[2, 0], df[2, 1], df[2, 4], df[2, 6])
 
-# residu
+# Residu calculation
+
 r_ad = (ad - obs) + MSL_ad
 r_ls = (ls - obs) + MSL_ls
 r_ios = (ios - obs) + MSL_ios
 
-''''
-plotting 
-'''
+# Plotting 
 
 def tide_plot(obs, cal, residue, MSL, HHWL, MHWL, LLWL, MLWL, title, line_width):
     plt.plot(obs, 'tomato', linewidth=line_width)
