@@ -10,7 +10,7 @@ This study compared several methods in tide calculation and wave hindcasting. Th
 ### Results 
 The highest water level elevation recorded in Bitung Regency, North Sulawesi from October 1 2022 to October 31 2022 was 2.584 m, and the lowest was 0.944 m. The results indicate that although the Formzahl values obtained from the three tidal analysis methods differ, they all fall within the range of 0.25–1.5. Therefore, it can be concluded that the tidal type in Bitung Regency is a mixed, predominantly semidiurnal tide.
 
-Plots include:
+Plots included:
 #####
 <img height="100" alt="Admiralty" src="https://github.com/user-attachments/assets/8cb70236-c06e-4d33-8c9e-2cc9d0ed9b6d" />
 <img height="100" alt="LS" src="https://github.com/user-attachments/assets/8f478738-8a23-44a3-b75d-e054ed3d075e" />
@@ -25,7 +25,7 @@ Polynomial inversion (orders 6, 8, 10) produced beautifully smooth fits within t
 
 Conclusion: Polynomial inversion fails here due to numerical instability and cannot generalize beyond the observed data. Regularization or physically-based models are required for meaningful results.
 
-Plots include:
+Plots included:
 #####
 <img height="100" alt="lllllll" src="https://github.com/user-attachments/assets/54b40764-00a9-4289-9afd-bd21608f21d8" />
 <img height="100" alt="hind" src="https://github.com/user-attachments/assets/2661c0fb-f68c-41b0-9537-4dfbc0fe8a52" />
