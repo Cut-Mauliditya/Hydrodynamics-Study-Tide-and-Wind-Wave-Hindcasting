@@ -27,8 +27,9 @@ Conclusion: Polynomial inversion fails here due to numerical instability and can
 
 Plots included:
 #####
-<img height="100" alt="lllllll" src="https://github.com/user-attachments/assets/54b40764-00a9-4289-9afd-bd21608f21d8" />
-<img height="100" alt="hind" src="https://github.com/user-attachments/assets/2661c0fb-f68c-41b0-9537-4dfbc0fe8a52" />
+<img height="100" alt="obs_bener" src="https://github.com/user-attachments/assets/c008adbf-c7f6-44d4-b3c8-2c64762cdf8f" />
+<img height="100" alt="cal" src="https://github.com/user-attachments/assets/dac61f60-283b-45a8-bf67-8548e46dcac8" />
+
 
 #####
 #####
